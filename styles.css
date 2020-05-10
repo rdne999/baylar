@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right, #f3f3f3, #fcfcfc);
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.borders {
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px 0 10px 0;
+}
+
+.article {
+  margin: 30px;
+  padding: 0 5px 5px;
+}
+
+.content {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px 0 10px 0;
+}
+
+.title {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.header {
+  background-color: #fff;
+  height: 10vh;
+}
+
+.header h1 {
+  line-height: 10vh;
+  font-size: 3em;
+  padding: 0 30px
+}
+
+.section-parent {
+  display: flex;
+  min-width: 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-section {
+  flex: 1;
+  flex-grow: 1;
+  margin: 20px
+}
+
+.second-section {
+  flex: 1;
+  flex-grow: 1;
+  margin: 20px
+}
+
+.third-section {
+  margin: 20px;
+  flex-grow: 1;
+  flex: 1;
+}
+
+blockquote {
+  width: 300px;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 10px
+}
+
+figcaption {
+  text-align: center;
+  font-style: oblique;
+}
+
+figure img {
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+
+.quote {
+  font-style: italic;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px 0 0 0;
+}
+
+.quote-author {
+  background-color: #fff;
+  font-weight: bold;
+  text-align: right;
+  padding: 5px;
+  border-radius: 0 0 10px 0;
+}
+
+@media(max-width:1000px) {
+  .section-parent {
+    flex-direction: column;
+  }
+}
